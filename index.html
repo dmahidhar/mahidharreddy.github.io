@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mahidhar Reddy's Cybersecurity Portfolio showcasing skills in ethical hacking, penetration testing, and network security.">
+    <title>Mahidhar Reddy | Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mahidhar Reddy</h1>
+            <p>Cybersecurity Expert | Ethical Hacker | Penetration Tester</p>
+            <button class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="fade-in">
+            <h2>About Me</h2>
+            <p>
+                I am a dedicated cybersecurity professional with a passion for ethical hacking and network security.
+                My experience spans across various domains, including penetration testing, vulnerability assessment, and secure code review.
+                I thrive in challenging environments and enjoy working on real-world security problems.
+            </p>
+        </section>
+
+        <section id="skills" class="fade-in">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Network Security</h3>
+                    <p>Proficient in securing networks, performing packet analysis, and identifying threats using tools like Wireshark and Nmap.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-bug"></i>
+                    <h3>Penetration Testing</h3>
+                    <p>Hands-on experience with tools like Metasploit, Burp Suite, and custom scripts for exploiting and mitigating vulnerabilities.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h3>Programming</h3>
+                    <p>Python, Bash scripting, and JavaScript for automation, tool development, and web security testing.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Web Application Security</h3>
+                    <p>Knowledgeable in OWASP Top 10 and conducting security audits on web applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="fade-in">
+            <h2>Experience</h2>
+            <div class="experience">
+                <div class="experience-item" onclick="toggleExperience(this)">
+                    <h3>Junior Engineer - Vishwa Samudra Engineering PVT LTD</h3>
+                    <p><strong>July 2023 - Present | Kollam</strong> <i class="fas fa-chevron-down"></i></p>
+                    <div class="experience-details">
+                        <ul>
+                            <li>Assisted in configuring and maintaining network hardware, including routers, switches, and firewalls.</li>
+                            <li>Provided technical support for network-related issues, escalating complex problems to senior engineers.</li>
+                            <li>Supported installation and configuration of CCTV systems, ensuring proper setup and operation.</li>
+                            <li>Administered Windows and Linux servers, automating routine tasks using scripting to enhance efficiency.</li>
+                            <li>Played a key role in deploying a new branch office network and implementing a network monitoring system.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item" onclick="toggleExperience(this)">
+                    <h3>Flutter Developer - Swensa Services Pvt Ltd</h3>
+                    <p><strong>January 2022 - July 2022 | Hyderabad</strong> <i class="fas fa-chevron-down"></i></p>
+                    <div class="experience-details">
+                        <ul>
+                            <li>Assisted in the development of mobile applications using Flutter, focusing on UI components and back-end integration.</li>
+                            <li>Collaborated with senior developers to deliver optimal solutions, improving application performance.</li>
+                            <li>Contributed to a travel booking app, implementing search and booking functionalities, resulting in a 15% increase in user engagement.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item" onclick="toggleExperience(this)">
+                    <h3>IT Service Desk Analyst - VDA INFO Solutions PVT LTD</h3>
+                    <p><strong>December 2019 - December 2021 | Bangalore</strong> <i class="fas fa-chevron-down"></i></p>
+                    <div class="experience-details">
+                        <ul>
+                            <li>Managed support requests for networks and applications via email, chat, and telephone.</li>
+                            <li>Maintained service documentation and incident tracking, ensuring timely issue resolution and escalation.</li>
+                            <li>Performed system installations, updates, and maintenance to avoid service interruptions.</li>
+                            <li>Developed recommendations for optimizing IT performance and improving operational efficiency.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="fade-in">
+            <h2>Projects</h2>
+            <div id="projects-container"></div>
+        </section>
+
+        <section id="certifications" class="fade-in">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Certified Ethical Hacker (CEH)</li>
+                <li>CompTIA Security+</li>
+                <li>Offensive Security Certified Professional (OSCP)</li>
+                <li>CISSP (Certified Information Systems Security Professional)</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="fade-in">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:mahidhar.re1@gmail.com">mahidhar.re1@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/mahidhar-reddy-d-a10164217" target="_blank">linkedin.com/in/mahidhar-reddy-d-a10164217</a></p>
+            <p>GitHub: <a href="https://github.com/mahidharreddy" target="_blank">github.com/mahidharreddy</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mahidhar Reddy | Built with passion for cybersecurity</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

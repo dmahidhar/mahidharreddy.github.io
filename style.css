@@ -1,0 +1,85 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --header-background: #1f1f1f;
+    --card-background: #fff;
+    --link-color: #007bff;
+    --link-hover-color: #0056b3;
+}
+
+.dark-mode {
+    --background-color: #181818;
+    --text-color: #ddd;
+    --header-background: #121212;
+    --card-background: #242424;
+    --link-color: #1da1f2;
+    --link-hover-color: #1a91da;
+}
+
+/* Header */
+header {
+    background: var(--header-background);
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/* ...Additional styling remains similar but adjusted for dark mode... */
+
+/* Experience Section */
+.experience-item {
+    background: var(--card-background);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.experience-item .experience-details {
+    display: none;
+}
+
+.experience-item.open .experience-details {
+    display: block;
+}
+
+.experience-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.experience-item p {
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.experience-item i {
+    float: right;
+    transition: transform 0.3s;
+}
+
+.experience-item.open i {
+    transform: rotate(180deg);
+}
